@@ -1,0 +1,13 @@
+@use "../../styles/global" as global;
+@use "../../styles/constants" as constants;
+@use "../../styles/mixins" as mixin;
+
+.input_email {
+  border: none;
+  border-bottom: 1px solid constants.$color-black;
+  @include mixin.font($size: 1.6rem, $weight: 400);
+  margin-bottom: 40px;
+}
+.email_label {
+  @include mixin.font($size: 1.8rem, $weight: 400);
+}

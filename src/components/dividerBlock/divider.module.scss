@@ -1,0 +1,17 @@
+@use "../../styles/global" as global;
+@use "../../styles/constants" as constants;
+@use "../../styles/mixins" as mixin;
+
+.block_divider {
+  column-gap: 17px;
+}
+
+.divider__line {
+  height: 2px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.divider__name {
+  margin-bottom: 0;
+}

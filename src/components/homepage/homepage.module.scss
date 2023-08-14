@@ -1,0 +1,91 @@
+@use "../../styles/global" as global;
+@use "../../styles/constants" as constants;
+@use "../../styles/mixins" as mixin;
+
+.home {
+  margin-top: 105px;
+  margin-bottom: 100px;
+}
+.home__line {
+  top: 4%;
+  right: 0%;
+}
+
+.home__title {
+  margin-bottom: 46px;
+  // @include media-extraLarge {
+  //   @include font($size: 3.6rem, $weight: 600);
+  //   letter-spacing: 0.03em;
+  // }
+}
+.link__image {
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+.about {
+  margin-bottom: 100px;
+}
+.about__quote {
+  margin-bottom: 60px;
+}
+
+.decsription__text {
+  max-width: 50%;
+}
+.text__info {
+  @include mixin.font($size: 1.8rem, $weight: 400);
+  color: constants.$color-light;
+  margin-bottom: 40px;
+}
+.services {
+  margin-bottom: 100px;
+}
+.service__description {
+  @include mixin.font($size: 1.8rem, $weight: 400);
+  letter-spacing: 0.03em;
+  color: constants.$color-light;
+  margin-bottom: 88px;
+  max-width: 491px;
+}
+.service__list {
+  @include mixin.font($size: 2.4rem, $weight: 600);
+  letter-spacing: 0.03em;
+  background: constants.$color-white;
+  max-width: 883px;
+  width: 100%;
+}
+.service__image {
+  width: 89%;
+}
+
+// ________________________________________
+.product {
+  margin-bottom: 100px;
+}
+
+.item__name {
+  @include mixin.font($size: 1.8rem, $weight: 400);
+  margin-bottom: 43px;
+  //   line-height: 1.8rem;
+}
+.item__number,
+.item__name_text {
+  @include mixin.font($size: 3.2rem, $weight: 600);
+  color: constants.$color-primary;
+}
+
+.item__title {
+  margin-bottom: 73px;
+}
+// _____________________________________
+.material {
+  margin-bottom: 100px;
+}
+.material__left {
+  max-width: 48%;
+}
+.material__description {
+  max-width: 74%;
+}
+// ___________________________________

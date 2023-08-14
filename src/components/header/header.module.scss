@@ -1,0 +1,37 @@
+@use "../../styles/global" as global;
+@use "../../styles/constants" as constants;
+@use "../../styles/mixins" as mixin;
+
+.page__header {
+  background-color: constants.$background-color;
+  margin-top: 40px;
+}
+
+.nav__link {
+  color: constants.$color-primary;
+  @include mixin.font($size: 1.6rem, $weight: 400);
+  text-decoration: none;
+  // letter-spacing: 5px;
+
+  &:hover {
+    @include mixin.font($size: 1.6rem, $weight: 700);
+    color: constants.$color-primary;
+    letter-spacing: 2px;
+  }
+}
+.nav__link_contact {
+  background-color: constants.$primary-blue;
+  color: constants.$color-white;
+  text-decoration: none;
+  @include mixin.font($size: 1.6rem, $weight: 400);
+  margin-right: 0;
+
+  &:hover {
+    @include mixin.font($size: 1.6rem, $weight: 600);
+    color: constants.$color-white;
+    letter-spacing: 2px;
+  }
+}
+.menu__icon {
+  color: constants.$color-primary;
+}

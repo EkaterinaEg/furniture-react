@@ -1,0 +1,34 @@
+@use "../../styles/global" as global;
+@use "../../styles/constants" as constants;
+@use "../../styles/mixins" as mixin;
+
+.quoteWindow__author {
+  @include mixin.font($size: 1.8rem, $weight: 400);
+  color: constants.$color-light;
+  line-height: 160%;
+}
+
+.author__name {
+  @include mixin.font($size: 1.8rem, $weight: 600);
+  color: constants.$color-black;
+  padding-right: 50px;
+}
+.quoteWindow {
+  position: absolute;
+  bottom: -125px;
+  right: 100px;
+  filter: drop-shadow(10px 10px 40px rgba(0, 0, 0, 0.05));
+  background-color: constants.$color-white;
+  @include mixin.media-768 {
+    bottom: -50px;
+    right: 10px;
+  }
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+.quoteWindow__image {
+  &:hover {
+    transform: scale(1.2);
+  }
+}
